@@ -1,0 +1,130 @@
+html {   
+    background-color: rgba(80, 69, 54, 0.329);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Sour Gummy", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    box-shadow: 0em 0.1em 0.6em;
+    border-radius: 1em;
+    padding: 3em 2em;
+    background-color: beige;
+}
+
+body div button,
+input  {
+    margin: 0em 0.25em;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.322);
+    
+}
+
+.listeTaches {    
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.listeTaches li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em; 
+    padding: 0.5em;    
+    margin: 0.5em 0;
+    max-width: 90vw;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.322);
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+}
+
+.listeTaches li span {
+    
+    border: 1px solid #ccc;
+    padding: 0.1em 1em;
+    border-radius: 5px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    flex: 1; 
+    font-size: 2em;
+}
+
+.listeTaches li button1 , button2 {    
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 0.5em ;
+    margin: 0.5em;    
+    cursor: pointer;
+    border-radius: 5px;
+    white-space: nowrap; 
+    flex-shrink: 0; 
+}
+
+.listeTaches li button1 {
+    margin-left: 2.5em;
+}
+
+.listeTaches li button2 {
+    margin-right: 2.5em;
+}
+
+.listeTaches li ion-icon {
+    font-size: 2em;
+}
+
+input::placeholder {
+    font-size: 0.8em; 
+    color: rgba(0, 0, 0, 0.178);
+}
+
+
+@media (max-width: 768px){
+    body {
+        padding: 1em;        
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    body div button,
+    input  {
+        font-size: 1em;
+        
+    }
+
+    .listeTaches li span {
+        font-size: 1.5em;
+        
+    }
+
+    .listeTaches li ion-icon {
+        font-size: 1em;
+        margin: 0em;
+    }
+
+    .listeTaches li button1 {
+        margin: 0em;
+        
+    }
+
+    .listeTaches li button2 {
+        margin: 0em;
+        
+    }
+}
